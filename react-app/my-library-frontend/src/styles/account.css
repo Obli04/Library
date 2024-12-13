@@ -1,0 +1,218 @@
+.account-container {
+    border-radius: 20px;
+    background-color: #FAFAE6;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding: 40px 20px; 
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .account-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .change-password-btn {
+    background-color: #4f8f7b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .change-password-btn:hover {
+    background-color: #458775;
+    transform: translateY(-2px);
+  }
+  
+  .account-tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .tab-btn {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    color: #666;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .tab-btn.active {
+    color: #007bff;
+  }
+  
+  .tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+  }
+  
+  .books-container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .book-card {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .book-cover {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .book-info {
+    padding: 15px;
+    flex: 1;
+  }
+  
+  .book-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .book-info p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .remove-wishlist-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto;
+    transition: all 0.3s ease;
+    width: fit-content;
+  }
+  
+  .remove-wishlist-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .message {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .message.success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .no-books {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    grid-column: 1 / -1;
+    padding: 40px 0;
+  }
+  
+  .skeleton-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .skeleton-flex-item {
+    flex: 1;
+    min-width: 300px;
+    box-sizing: border-box;
+  }
+  
+  .books-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .book-flex-item {
+    flex: 1;
+    min-width: 300px;
+    box-sizing: border-box;
+  }
+  
+  .book-flex-item-wishlist {
+    flex: 1;
+    min-width: 200px;
+    max-width: 200px;
+    box-sizing: border-box;
+  }
+  
+  .book-card-wishlist {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    min-height: 400px;
+  }
+  
+  .book-card-wishlist:hover {
+    transform: translateY(-5px);
+  }
+  
+  .book-cover-wishlist {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .book-card-wishlist .book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 120px;
+  }

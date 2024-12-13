@@ -1,0 +1,24 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .dashboard-title {
+    margin-bottom: 20px;
+    color: #f5f5dc;
+  }
+  
+  .action-cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 20px auto;
+    gap: 20px;
+  }
+  
+  .borrowed-books-container {
+    background-color: #f5f5dc;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }

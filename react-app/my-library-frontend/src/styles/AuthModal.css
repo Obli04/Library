@@ -1,0 +1,254 @@
+.auth-modal {
+  background-color: #f5f5dc;
+  text-align: center;
+  color: #363B35;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  max-height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.auth-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #363B35;
+  background-color: #FAFAE6;
+  border-radius: 5px;
+}
+
+.generalbutton {
+  width: 100%;
+  padding: 10px;    
+  background-color: #4f8f7b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.generalbutton:hover {
+  background-color: #4E8574;
+}
+
+.forgot-password-button {
+  background: none;
+  border: none;
+  color: #4E8574;
+  cursor: pointer;
+  margin-top: 15px;
+  text-align: left;
+  width: auto;
+  padding: 0;
+}
+
+.forgot-password-button:hover {
+  color: #25605C;
+  text-decoration: underline;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.global-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.toggle-link {
+  background: none;
+  border: none;
+  color: #4E8574;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.toggle-link:hover {
+  color: #25605C;
+  text-decoration: underline;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  flex: 1;
+}
+
+.modal-buttons button:last-child {
+  background-color: #6c757d;
+}
+
+.modal-buttons button:last-child:hover {
+  background-color: #5a6268;
+}
+
+.form-field {
+  margin-bottom: 15px;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-field input:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 2px rgba(0,102,204,0.2);
+}
+
+.auth-modal h2 {
+  margin-bottom: 20px;
+  color: #363B35;
+}
+
+.auth-modal p {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+@media (max-height: 600px) {
+  .auth-modal {
+    padding: 15px;
+    max-height: 85vh;
+  }
+
+  .form-field {
+    margin-bottom: 10px;
+  }
+}
+
+.reset-password-text {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.toggle-container {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.verification-link {
+  color: #4f8f7b;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.verification-link:hover {
+  color: #3a7a66;
+}
+
+.submit-button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.back-to-login {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.generalbutton.loading {
+  position: relative;
+  color: transparent;
+  pointer-events: none;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.spinner > div {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% { 
+    transform: scale(0);
+  } 
+  40% { 
+    transform: scale(1.0);
+  }
+}
+
+.generalbutton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

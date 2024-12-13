@@ -1,0 +1,154 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #FAFAE6;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-button {
+  background-color: transparent;
+  color: #363B35;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-button:hover {
+  background-color: #4F8F7B;
+  color: #FAFAE6;
+}
+
+.nav-button.active {
+  color: #FAFAE6;
+  background-color: #4F8F7B;
+}
+
+.auth-button {    
+  background-color: #4F8F7B;
+  color: #FAFAE6;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+  min-width: 100px;
+  margin: 0 5px;
+}
+
+.auth-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #363B35;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+    position: fixed;
+    min-height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-toggle {
+    display: block;
+    position: static;
+    font-size: 24px;
+    z-index: 101;
+  }
+
+  .nav-container.nav-links {
+    display: none;
+    width: 200px;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 5px;
+    gap: 5px;
+  }
+
+  .nav-container.nav-links.visible {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FAFAE6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    z-index: 100;
+  }
+
+  .nav-container.auth-buttons {
+    display: flex;
+    position: static;
+    width: auto;
+    flex-direction: row;
+    padding: 0;
+    gap: 5px;
+    justify-content: flex-end;
+  }
+
+  .nav-button {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    padding: 6px 12px;
+    display: block;
+    font-size: 14px;
+  }
+
+  .auth-button {
+    width: auto;
+    min-width: 70px;
+    margin: 0;
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-container.nav-links {
+    width: 160px;
+  }
+
+  .nav-button {
+    padding: 4px 10px;
+    font-size: 13px;
+  }
+
+  .auth-button {
+    min-width: 60px;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}

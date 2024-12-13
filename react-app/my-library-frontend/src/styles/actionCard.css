@@ -1,0 +1,28 @@
+.action-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  background-color: #f5f5dc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+}
+
+.action-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.action-card h2 {
+  margin-bottom: 8px;
+  color: #363b35;
+  font-size: 1.4em;
+}
+
+.action-card p {
+  color: #363b35;
+  margin: 0;
+}
